@@ -1,0 +1,69 @@
+{
+  "raw_rows": 1020,
+  "header": [
+    "appointment_id",
+    "patient_id",
+    "clinic_id",
+    "booked_on",
+    "appt_date",
+    "age",
+    "gender",
+    "distance_km",
+    "fee_inr",
+    "booking_channel",
+    "visit_type",
+    "reminder_sent",
+    "prior_no_shows",
+    "status"
+  ],
+  "accepted": 988,
+  "rejected": 32,
+  "raw_shape": [
+    1020,
+    14
+  ],
+  "raw_nulls": {
+    "appointment_id": 0,
+    "patient_id": 0,
+    "clinic_id": 0,
+    "booked_on": 0,
+    "appt_date": 1,
+    "age": 12,
+    "gender": 0,
+    "distance_km": 20,
+    "fee_inr": 0,
+    "booking_channel": 0,
+    "visit_type": 0,
+    "reminder_sent": 0,
+    "prior_no_shows": 0,
+    "status": 4
+  },
+  "raw_dupes": 20,
+  "clean_rows": 990,
+  "no_shows": 218,
+  "no_show_pct": 22.0,
+  "means": [
+    48.173737373737374,
+    9.50090909090909,
+    635.7141414141414,
+    11.819191919191919
+  ],
+  "lead_gt14_n": 296,
+  "lead_gt14_share": 0.298989898989899,
+  "distance_z_abs_gt2": 53,
+  "capped": {
+    "distance_km": 26,
+    "fee_inr": 3
+  },
+  "temp_c": [
+    19.6,
+    20.2,
+    20.4,
+    19.6,
+    19.6,
+    25.9,
+    19.5,
+    20.0
+  ],
+  "weather_failures": []
+}

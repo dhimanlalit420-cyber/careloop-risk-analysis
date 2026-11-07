@@ -1,0 +1,236 @@
+{
+  "-- 2.1 Counts": [
+    {
+      "appointments": 990,
+      "no_shows": 218
+    },
+    {
+      "clinics": 8
+    }
+  ],
+  "-- 2.2 Clinic rates with the requested volume floor": [
+    {
+      "clinic_name": "Hadapsar Care Centre",
+      "city": "Pune",
+      "appointments": 143,
+      "no_shows": 39,
+      "no_show_pct": 27.3
+    },
+    {
+      "clinic_name": "Malviya Nagar Clinic",
+      "city": "Jaipur",
+      "appointments": 142,
+      "no_shows": 38,
+      "no_show_pct": 26.8
+    },
+    {
+      "clinic_name": "Kothrud Family Clinic",
+      "city": "Pune",
+      "appointments": 160,
+      "no_shows": 36,
+      "no_show_pct": 22.5
+    },
+    {
+      "clinic_name": "Vijay Nagar Clinic",
+      "city": "Indore",
+      "appointments": 101,
+      "no_shows": 21,
+      "no_show_pct": 20.8
+    },
+    {
+      "clinic_name": "Edappally Medical Centre",
+      "city": "Kochi",
+      "appointments": 142,
+      "no_shows": 23,
+      "no_show_pct": 16.2
+    },
+    {
+      "clinic_name": "Vaishali Nagar Clinic",
+      "city": "Jaipur",
+      "appointments": 130,
+      "no_shows": 18,
+      "no_show_pct": 13.8
+    }
+  ],
+  "-- 2.2 All clinics, to expose the small-volume highest rate": [
+    {
+      "clinic_name": "Gomti Nagar Care Point",
+      "city": "Lucknow",
+      "appointments": 90,
+      "no_shows": 30,
+      "no_show_pct": 33.3
+    },
+    {
+      "clinic_name": "Hadapsar Care Centre",
+      "city": "Pune",
+      "appointments": 143,
+      "no_shows": 39,
+      "no_show_pct": 27.3
+    },
+    {
+      "clinic_name": "Malviya Nagar Clinic",
+      "city": "Jaipur",
+      "appointments": 142,
+      "no_shows": 38,
+      "no_show_pct": 26.8
+    },
+    {
+      "clinic_name": "Kothrud Family Clinic",
+      "city": "Pune",
+      "appointments": 160,
+      "no_shows": 36,
+      "no_show_pct": 22.5
+    },
+    {
+      "clinic_name": "Vijay Nagar Clinic",
+      "city": "Indore",
+      "appointments": 101,
+      "no_shows": 21,
+      "no_show_pct": 20.8
+    },
+    {
+      "clinic_name": "Edappally Medical Centre",
+      "city": "Kochi",
+      "appointments": 142,
+      "no_shows": 23,
+      "no_show_pct": 16.2
+    },
+    {
+      "clinic_name": "Sitabuldi Health Point",
+      "city": "Nagpur",
+      "appointments": 82,
+      "no_shows": 13,
+      "no_show_pct": 15.9
+    },
+    {
+      "clinic_name": "Vaishali Nagar Clinic",
+      "city": "Jaipur",
+      "appointments": 130,
+      "no_shows": 18,
+      "no_show_pct": 13.8
+    }
+  ],
+  "-- 2.3 Lead-time bands": [
+    {
+      "lead_band": "1-7",
+      "appointments": 390,
+      "no_shows": 63,
+      "no_show_pct": 16.2
+    },
+    {
+      "lead_band": "8-14",
+      "appointments": 304,
+      "no_shows": 53,
+      "no_show_pct": 17.4
+    },
+    {
+      "lead_band": "15-30",
+      "appointments": 253,
+      "no_shows": 76,
+      "no_show_pct": 30.0
+    },
+    {
+      "lead_band": "31+",
+      "appointments": 43,
+      "no_shows": 26,
+      "no_show_pct": 60.5
+    }
+  ],
+  "-- 2.4 Month trend and month-over-month change in percentage points": [
+    {
+      "month": "2025-01",
+      "appointments": 157,
+      "no_show_pct": 24.8,
+      "change_pp": null
+    },
+    {
+      "month": "2025-02",
+      "appointments": 151,
+      "no_show_pct": 20.5,
+      "change_pp": -4.3
+    },
+    {
+      "month": "2025-03",
+      "appointments": 142,
+      "no_show_pct": 20.4,
+      "change_pp": -0.1
+    },
+    {
+      "month": "2025-04",
+      "appointments": 177,
+      "no_show_pct": 20.9,
+      "change_pp": 0.5
+    },
+    {
+      "month": "2025-05",
+      "appointments": 198,
+      "no_show_pct": 23.7,
+      "change_pp": 2.8
+    },
+    {
+      "month": "2025-06",
+      "appointments": 165,
+      "no_show_pct": 21.2,
+      "change_pp": -2.5
+    }
+  ],
+  "-- 2.5 Clinic rank within city and comparison with the overall rate": [
+    {
+      "clinic": "Vijay Nagar Clinic",
+      "city": "Indore",
+      "no_show_pct": 20.8,
+      "rank_in_city": 1,
+      "vs_overall": "below"
+    },
+    {
+      "clinic": "Malviya Nagar Clinic",
+      "city": "Jaipur",
+      "no_show_pct": 26.8,
+      "rank_in_city": 1,
+      "vs_overall": "above"
+    },
+    {
+      "clinic": "Vaishali Nagar Clinic",
+      "city": "Jaipur",
+      "no_show_pct": 13.8,
+      "rank_in_city": 2,
+      "vs_overall": "below"
+    },
+    {
+      "clinic": "Edappally Medical Centre",
+      "city": "Kochi",
+      "no_show_pct": 16.2,
+      "rank_in_city": 1,
+      "vs_overall": "below"
+    },
+    {
+      "clinic": "Gomti Nagar Care Point",
+      "city": "Lucknow",
+      "no_show_pct": 33.3,
+      "rank_in_city": 1,
+      "vs_overall": "above"
+    },
+    {
+      "clinic": "Sitabuldi Health Point",
+      "city": "Nagpur",
+      "no_show_pct": 15.9,
+      "rank_in_city": 1,
+      "vs_overall": "below"
+    },
+    {
+      "clinic": "Hadapsar Care Centre",
+      "city": "Pune",
+      "no_show_pct": 27.3,
+      "rank_in_city": 1,
+      "vs_overall": "above"
+    },
+    {
+      "clinic": "Kothrud Family Clinic",
+      "city": "Pune",
+      "no_show_pct": 22.5,
+      "rank_in_city": 2,
+      "vs_overall": "above"
+    }
+  ],
+  "duplicate_error": "UNIQUE constraint failed: appointments.appointment_id"
+}

@@ -1,0 +1,98 @@
+{
+  "train_n": 792,
+  "test_n": 198,
+  "test_no_shows": 49,
+  "baseline_accuracy": 0.7525252525252525,
+  "logistic": {
+    "accuracy": 0.7878787878787878,
+    "confusion_matrix": [
+      [
+        139,
+        10
+      ],
+      [
+        32,
+        17
+      ]
+    ],
+    "precision": 0.6296296296296297,
+    "recall": 0.3469387755102041,
+    "f1": 0.4473684210526316,
+    "roc_auc": 0.788933022873579,
+    "coefficients": {
+      "age": -0.2538801442716842,
+      "distance_km": 0.25344770956317536,
+      "fee_inr": 0.45276146308564247,
+      "lead_days": 0.6144707304969084,
+      "prior_no_shows": 0.6496116219621334,
+      "reminder_sent": -0.5806686033659922,
+      "booking_channel_App": -0.04680357040738987,
+      "booking_channel_Phone": 0.2158813749282703,
+      "booking_channel_Walk-In": -0.18636416836300684,
+      "visit_type_Consultation": 0.015658011798355284,
+      "visit_type_Follow-up": -0.01565801179835512
+    },
+    "reminder_exp_scaled": 0.559524141750829,
+    "reminder_exp_actual": 0.3093980903124433
+  },
+  "tree_full": {
+    "depth": 15,
+    "train_accuracy": 1.0,
+    "test_accuracy": 0.6717171717171717,
+    "test_recall": 0.3877551020408163,
+    "test_auc": 0.576427886590878
+  },
+  "tree_depth3": {
+    "depth": 3,
+    "train_accuracy": 0.821969696969697,
+    "test_accuracy": 0.7777777777777778,
+    "test_recall": 0.22448979591836735,
+    "test_auc": 0.6996986714148747
+  },
+  "random_forest": {
+    "train_accuracy": 1.0,
+    "test_accuracy": 0.7474747474747475,
+    "recall": 0.30612244897959184,
+    "roc_auc": 0.7057252431173813,
+    "top3": {
+      "lead_days": 0.21990547110065853,
+      "age": 0.19678780126634898,
+      "distance_km": 0.19473924793399736
+    }
+  },
+  "grid": {
+    "best_params": {
+      "max_depth": 3,
+      "n_estimators": 200
+    },
+    "best_score": 0.7673242251739405
+  },
+  "cv_auc": {
+    "logistic regression": 0.7737139899948249,
+    "depth-3 tree": 0.6784494968661952,
+    "random forest": 0.7466024782933701,
+    "tuned forest": 0.7673242251739405
+  },
+  "oof_thresholds": {
+    "0.5": {
+      "precision": 0.5753424657534246,
+      "recall": 0.2485207100591716,
+      "f1": 0.34710743801652894,
+      "flagged": 73
+    },
+    "0.35": {
+      "precision": 0.512987012987013,
+      "recall": 0.46745562130177515,
+      "f1": 0.4891640866873065,
+      "flagged": 154
+    }
+  },
+  "winner": "logistic regression",
+  "chosen_threshold": 0.35,
+  "final_test": {
+    "precision": 0.5714285714285714,
+    "recall": 0.5714285714285714,
+    "flagged": 49,
+    "roc_auc": 0.788933022873579
+  }
+}
