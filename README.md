@@ -25,12 +25,13 @@ The final model is logistic regression with a 0.35 threshold. It had the highest
 
 ## Reproducing the work
 
-The source CSVs are preserved unchanged in `data/`. Run `01_ingest_clean.ipynb` from the repository root to reproduce Part 1 and the SQL load file. Run `02_python_check.py` alongside the queries in `02_queries.sql` to compare clinic counts. Run `03_model.ipynb` to reproduce the split, comparisons, selection, and `test_risk_scores.csv`. Run `04_genai.ipynb` in Colab, upload `appointments_clean.csv` and `data/followup_notes.csv` when prompted, then enter a Gemini API key at its run-time prompt; never place the key in a notebook or repository file. It writes `notes_analysed.csv` and prints the prompt comparison and note/reminder cross-tab needed to replace the draft Part 4 sentence and recommendation above.
+The source CSVs are preserved unchanged in `data/`. Run `01_ingest_clean.ipynb` from the repository root to reproduce Part 1 and the SQL load file. Run `02_python_check.py` alongside the queries in `02_queries.sql` to compare clinic counts. Run `03_model.ipynb` to reproduce the split, comparisons, selection, and `test_risk_scores.csv`. Open `04_genai.ipynb` in Colab from this public GitHub repository and run the setup cell to clone the data, then enter a Gemini API key only at its run-time prompt; never place the key in a notebook or repository file. It writes `notes_analysed.csv` and prints the prompt comparison and note/reminder cross-tab needed to replace the draft Part 4 sentence and recommendation above.
 
 The SQL file creates the schema for MySQL Workbench, then documents the queries. When using SQLiteOnline, skip the `CREATE DATABASE` and `USE` lines as indicated in the file.
 
 ## Dependencies
 
 See `requirements.txt`. The Gemini notebook installs `google-genai` and Pydantic in Colab and pauses between calls to respect the free-tier rate limit.
+
 
 
