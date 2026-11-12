@@ -1,0 +1,11 @@
+note_id,appointment_id,root_cause,confidence,summary,recommended_action,validation_status
+N001,A0872,forgot_or_no_reminder,1.0,Patient missed the appointment because she did not receive a reminder and forgot. She wants to reschedule for next week.,Reschedule the appointment for next week and verify the patient's contact number for future SMS reminders.,valid
+N002,A0897,distance_or_transport,0.95,Patient missed the appointment because they live far from the clinic and could not find transportation.,Assess availability of telemedicine options or assist with transport coordination for future visits.,valid
+N003,A0526,cost_or_fee,1.0,Patient skipped the appointment because the consultation fee was too high this month and inquired about follow-up discounts.,"Provide information regarding available financial assistance, sliding scale fees, or follow-up discounts.",valid
+N004,A0926,other,0.0,No note recorded,Re-call patient,skipped_blank
+N005,A0534,illness_or_emergency,0.95,"Patient missed the appointment due to a high fever and body ache, and stayed in bed.",Reschedule the outpatient appointment once the patient has fully recovered.,valid
+N006,A0507,work_or_schedule,0.95,Patient missed the appointment due to an urgent office meeting and could not leave work.,Reschedule the outpatient appointment for an evening slot as requested.,valid
+N007,A0333,forgot_or_no_reminder,0.95,Patient forgot the appointment because no SMS reminder was received and wishes to rebook.,Reschedule the appointment and set up a reliable reminder system.,valid
+N008,A0222,distance_or_transport,0.95,Patient missed the appointment because a city bus strike and lack of available autos made travel impossible.,Reschedule the appointment and offer telehealth options or transport assistance if available.,valid
+N009,A0977,other,0.5,"Phone was switched off, unable to reach the patient after three attempts.",Try contacting the patient again via phone at a later time or send an SMS reminder.,valid
+N010,A0596,work_or_schedule,0.95,Patient missed the appointment due to a factory shift change and inability to secure leave.,Reschedule the patient for a Saturday appointment.,valid
